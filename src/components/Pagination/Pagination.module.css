@@ -1,0 +1,14 @@
+.pagination {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: unset;
+}
+
+@media only screen and (max-width: 861px) {
+  .pagination {
+    position: unset;
+    padding: 30px 0;
+    height: unset;
+  }
+}

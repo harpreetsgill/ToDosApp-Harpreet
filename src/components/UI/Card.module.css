@@ -1,0 +1,56 @@
+.card {
+  width: 375px;
+  height: 180px;
+  padding: 30px;
+  background-color: #f3faff;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.card h1 {
+  margin: 0;
+}
+
+.card p {
+  max-width: 50%;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.card textarea {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  display: block;
+  width: 50%;
+  height: 95px;
+  resize: none;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.card textarea::placeholder {
+  color: black;
+}
+
+.card textarea:focus {
+  outline: none;
+}
+
+.card .button {
+  position: absolute;
+  top: 40%;
+}
+
+@media only screen and (max-width: 861px) {
+  .card {
+    width: -webkit-fill-available !important;
+  }
+  .card textarea, .card p  {
+    width: 100%;
+    max-width: 100%;
+  }
+}
